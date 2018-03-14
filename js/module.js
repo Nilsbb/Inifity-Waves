@@ -37,8 +37,6 @@ var time       = 0;
 var fadeOut = { status: true,  time: getRand(defFadeOut.start, defFadeOut.end)};
 var fadeIn  = { status: false, time: getRand(defFadeIn.start, defFadeIn.end)};
 
-// Unlock audio playback by playing an empty buffer on the first touchend event
-Howler.mobileAutoEnable = false;
 // Audio settings
 var audio = new Howl({
     src: ['./samples/wave01.wav'],
@@ -101,7 +99,7 @@ jQuery(function () {
 
     // control for start button
     jQuery(document).on('click touch-end', '#startbutton', function () {
-        audio.on('stop', audio.play());
+        audio.play();
         // jQuery start container father of startbutton
         var startcontainer = jQuery('#startcontainer');
         // Move on top start container
