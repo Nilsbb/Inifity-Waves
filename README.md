@@ -1,12 +1,20 @@
-Infinity Waves
+# Infinity Waves
 
-DEMO
-https://nilsbb.com/infinity-waves/
+### Description
 
-Infinity Waves is a sea waves simulator. From a simple file audio, jQuery and HTML5 functions, the sound is modulated with random fadein and fadeout sequences. The wave audio is a simple white noise that contains every sound!
+https://nilsbb.com/infinity-waves/ | https://nilsbb.com/projects/infinity-waves/
 
-Mobile Support
+Infinity Waves is a sea waves simulator. From a simple file audio, jQuery and HTML5 functions, the sound is modulated with random fadein and fadeout sequences. The audio files are simple white, brown, pink noises!
+
+### Mobile Support
+
 + Chrome  - - - - >**Buggy but Works ✔️**
 + Safari  -- - - - - >**Not works ❌**
 + Opera   --- - - - >**Not tested ❌**
 + Firefox - - - - - >**Not tested ❌**
+
+##### Thanks to
+
++ [Howler 2](https://github.com/goldfire/howler.js/tree/2.0)
++ [jQuery 3](https://jquery.com/)
++ [Bootstrap 4](https://getbootstrap.com/)
