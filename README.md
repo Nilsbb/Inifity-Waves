@@ -9,9 +9,9 @@ Infinity Waves is a sea waves simulator. From a simple file audio, jQuery and HT
 ### Mobile Support
 
 + Chrome  - - - - >**Buggy but Works ✔️**
++ Firefox - - - - - >**Works ✔️**
 + Safari  -- - - - - >**Not works ❌**
-+ Opera   --- - - - >**Not tested ❌**
-+ Firefox - - - - - >**Not tested ❌**
++ Opera   --- - - - >**Not works ❌**
 
 ##### Thanks to
 

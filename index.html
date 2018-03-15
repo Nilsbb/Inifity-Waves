@@ -1,15 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-16" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Infinity Waves</title>
+    <meta charset="UTF-16" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url"           content="https://nilsbb.com/projects/infinity-waves/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Infinity Waves" />
+    <meta property="og:description"   content="Infinity Waves is a sea waves simulator. From a simple file audio, Howler, jQuery and HTML5, the sound is modulated with random fadein and fadeout sequences" />
+    <meta property="og:image"         content="https://emojipedia-us.s3.amazonaws.com/thumbs/160/microsoft/106/water-wave_1f30a.png" />
     <link rel="icon" href="https://emojipedia-us.s3.amazonaws.com/thumbs/160/microsoft/106/water-wave_1f30a.png" type="image/gif" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/howler2.js" type="application/javascript"></script>
     <script src="js/module.js" type="application/javascript"></script>
 <body>
-<div id="startcontainer" class="container position-absolute w-100 h-100 card-img-overlay text-center" style="z-index: 3; background-color: #ffffff;">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.12&appId=2124841667749832&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Load Twitter SDK for JavaScript -->
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));</script>
+<!-- site -->
+<div id="startcontainer" class="container position-fixed w-100 h-100 card-img-overlay text-center" style="z-index: 3; background-color: #ffffff;">
     <button id="startbutton" type="button" class="btn btn-primary btn-lg w-100 h-100">Just Relax<br><span style="color:#00bcd4;">Press me</span></button>
 </div>
 
@@ -25,13 +58,12 @@
                 <div class="media">
                     <div class="media-body">
                         <h5 class="mt-0">Smell the sea air</h5>
-                        <p>Infinity Waves is a sea waves simulator. From a simple file audio, jQuery and HTML5 functions, the sound is modulated with random fadein and fadeout sequences.</p>
+                        <p>Infinity Waves is a sea waves simulator. From a simple file audio, Howler, jQuery and HTML5, the sound is modulated with random fadein and fadeout sequences.</p>
                         <h5 class="mt-0">Message in the bottle</h5>
                         <p class="mb-0">It's time to book a holiday. Maybe somewhere across the seas. Somewhere I haven't been before. I want to go somewhere. Just anywhere I just don't care.</p>
                     </div>
                 </div>
             </div>
-            <hr>
         </div>
         <div class="col-sm">
             <!-- Weather -->
@@ -67,7 +99,99 @@
             </div>
         </div>
     </div>
+    <hr>
 </div>
+
+
+<!--Footer-->
+<footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+    <!--Footer Links-->
+    <div class="container text-center text-md-left">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-5">
+                <h5 class="mb-4 mt-3">Support this project</h5>
+                <p>If you liked this projects, please support it on <a href="https://github.com/Nilsbb/Inifity-Waves">Github</a>.
+                    Next updates will include: wind effects, more realistic waves, new audio files and social interactions.</p>
+            </div>
+            <!--Second column-->
+            <div class="col-md-2 mx-auto">
+            </div>
+            <!--/.Second column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Third column-->
+            <div class="col-md-2 mx-auto">
+                <h5 class="mb-4 mt-3">Credits</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://github.com/goldfire/howler.js/tree/2.0">Howler 2</a></li>
+                    <li><a href="https://jquery.com/">jQuery 3</a></li>
+                    <li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
+                </ul>
+            </div>
+            <!--/.Third column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Fourth column-->
+            <div class="col-md-2 mx-auto">
+                <h5 class="mb-4 mt-3">Mobile</h5>
+                <ul class="list-unstyled">
+                    <li>✔️ Chrome</li>
+                    <li>✔️ Firefox</li>
+                    <li>❌ Safari</li>
+                    <li>❌ Opera</li>
+                </ul>
+            </div>
+            <!--/.Fourth column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <hr>
+
+    <!--Call to action-->
+    <div class="text-center py-3">
+        <ul class="list-unstyled list-inline mb-0">
+            <li class="list-inline-item">
+                <h5 class="mb-1 text-primary">Support me</h5>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.paypal.me/NicolaBombaci" class="btn btn-outline-primary btn-rounded">Cheers! ☕</a>
+            </li>
+        </ul>
+    </div>
+    <!--/.Call to action-->
+
+    <hr>
+
+    <!--Social buttons-->
+    <div class="text-center">
+        <ul class="list-unstyled list-inline d-inline-flex">
+            <li class="list-inline-item">
+                <!-- fb like button -->
+                <div class="fb-like" data-href="https://nilsbb.com/projects/infinity-waves/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>            </li>
+            <li class="list-inline-item">
+                <!-- twitter button -->
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">Tweet</a>
+            </li>
+        </ul>
+    </div>
+    <!--/.Social buttons-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://nilsbb.com/">Nicola Bombaci</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
 
 </body>
 </html>
