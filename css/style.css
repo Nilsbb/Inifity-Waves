@@ -1,0 +1,79 @@
+canvas {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+html, body {
+    background-color: rgb(0, 65, 134) !important
+}
+
+h1, h2, h3, h4, h5 {
+    position: relative;
+}
+#app, #startcontainer {
+    -webkit-transition: ease-out all 1s;
+    -moz-transition: ease-out all 1s;
+    -ms-transition: ease-out all 1s;
+    -o-transition: ease-out all 1s;
+    transition: ease-out all 1s;
+}
+#app {
+    opacity: 0.2;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    -ms-filter: blur(8px);
+}
+
+#startcontainer {
+    cursor: pointer;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+}
+
+.wave {
+    opacity: .4;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    background: #0af;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+    animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: yellow;
+}
+
+.box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #e8a, #def 80%, rgba(255, 255, 255, .5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
